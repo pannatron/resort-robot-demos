@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+results*/
+clips/
+# full-size videos go to GitHub Releases; only the small pitch + GIFs live in git
+*.mp4
+!media/RPO_resort_pitch_small.mp4

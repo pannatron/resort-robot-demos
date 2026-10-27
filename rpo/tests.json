@@ -1,0 +1,10 @@
+{
+ "walk_mps": 0.5, "walk_note": "policy.onnx, deploy limit 0.6 m/s forward; Newton resort runs at 0.5-0.55",
+ "run_mps": 1.2, "run_note": "policy_amp.onnx in MuJoCo: 12.3 m in 10 s at command 1.2 m/s",
+ "stairs_cm": 15, "stairs_n": 8, "stairs_note": "Newton, resort stairs corridor->pool deck, down and up at 0.4 m/s, blind walking policy",
+ "getup_s": 5, "getup_note": "get-up clip 4.5 s + settle; back and side falls OK in MuJoCo and Newton; face-down OK in MuJoCo only",
+ "payload_ok_kg": 15, "payload_rec_kg": 5,
+ "payload_note": "MuJoCo walk+turn test: back 0-20 kg upright (20 kg drifts off command, 25 kg falls), chest (15 cm forward) 0-15 kg OK; Newton delivery job with 5 kg on the torso",
+ "mujoco_payload_back": {"0": "OK", "10": "OK", "15": "OK", "20": "drifts", "25": "falls at 3.4 s"},
+ "mujoco_payload_chest": {"2": "OK", "6": "OK", "10": "OK", "15": "OK"}
+}
